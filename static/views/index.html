@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>胡汉三</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/flexible.css"/>
+    <link rel="stylesheet" href="/public/css/index.css">
+    <link rel="stylesheet" href="/public/css/bc.css">
+    <link rel="shortcut icon" href="/public/views/favicon.ico">
+    <script src="/public/js/flexible.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body style="background: url(https://uploadbeta.com/api/pictures/random/);background-size: 100% 100%;">
+	<div class="box">
+		<h3>登录</h3>
+		
+		<form action="http://172.17.14.23:7777/api/logins" method="post" enctype="multipart/form-data" target="nm_iframe">
+			<input type="text" name="username"  placeholder="账号" id="username"/>
+			<input type="password" name="password"  placeholder="密码" id="password"/>
+			<input type="button" value="登录" onclick="login()"/>
+		</form>
+		<!--{{name}}-->
+		<iframe id="" name="nm_iframe" style="display:none;"></iframe>
+		<a href="/register/register" onclick="register()">立即注册</a>
+	</div>
+	<script src="/public/js/jquery.min.js"></script>
+
+<script src="/public/js/jQuery.cookie.js"></script>
+<script src="/public/js/index.js"></script>
+</body>
+</html>

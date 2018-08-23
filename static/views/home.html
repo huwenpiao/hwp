@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>home</title>
+		<link rel="stylesheet" href="/public/css/bc.css">
+		<link rel="stylesheet" href="/public/css/home.css">
+    	<link rel="shortcut icon" href="/public/views/favicon.ico">
+	</head>
+	<body style="background-image: url(/public/image/paal.png);">
+		<div class="top">
+			<a href="/api/homeindex" id="huidsho">回到首页</a>
+			<img src="{{imm}}"/>
+			<h2 id="non">{{name}}</h2>
+			<span id="bjxx" onclick="xiug('{{name}}')">修改资料</span>
+			<span id="tuic" onclick="tuichu()">退出</span>
+		</div>
+		
+		<div class="tex">
+			<textarea name="" rows="" cols="" id="textar"></textarea>
+			<input type="button" name="" id="" onclick="fabiao()" value="发表" />
+		</div>
+		
+		<div class="box">
+			<span id="guanbis">x</span>
+			<form action="http://172.17.14.23:7777/api/xxxxg" method="post" enctype="multipart/form-data" target="nm_iframe">
+				
+				<input type="text" name="username"  placeholder="用户名" id="username" value=""/>
+				<input type="password" name="password"  placeholder="请输入密码" id="password"/>
+				<label for="pho" class="pho">
+					<span>上传头像</span>
+					<input type="file" name="pho" id="pho" value="头像" accept=".png,.jpg,.jpeg,.bmp,.gif,.svg"/>
+				</label>
+				<input type="submit" value="确定" class="sub" onclick="gexiu()"/>
+			</form>
+			<iframe id="" name="nm_iframe" style="display:none;"></iframe>
+		</div>
+		
+		{{#each(array)}}
+			<div class="conter">
+			<div class="conter_le">
+				<p class="day">{{this.date}}</p>
+				<p class="m">{{this.month}}</p>
+			</div>
+			<div class="conter_ri">
+				<p id="ttt">{{this.tex}}</p>
+				<textarea name="" rows="" cols="" id="textars" value="8" style="display: none;">{{this.tex}}</textarea>
+				<span onclick="xgfn('{{this._id}}')" id="xiugg">修改</span>
+				<span onclick="rmdel('{{this._id}}')" id="rm">删除</span>
+				<!--<input type="button" name="" id="" onclick="fabiao2()" value="确定" />-->
+			</div>
+		</div>
+		{{/each}}
+			<script src="/public/js/jquery.min.js"></script>
+
+<script src="/public/js/jQuery.cookie.js"></script>
+		<script src="/public/js/home.js"></script>
+	</body>
+</html>

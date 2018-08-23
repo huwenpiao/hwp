@@ -1,0 +1,153 @@
+body{
+	background-color: rgb(237, 237, 239);
+}
+.box{
+	display: flex;
+	padding-top: 100px;
+	width: 900px;
+	margin: 0 auto;
+}
+.box_le{
+	width: 100%;
+	/*display: flex;*/
+}
+.bxx{
+	width: 100%;
+	display: flex;
+	margin-bottom: 30px;
+}
+.box_ri{
+	width: 220px;
+	padding-right: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/*justify-content: center;*/
+}
+.box_ri img{
+	width: 120px;
+	height: 120px;
+	border-radius: 60px;
+	margin-bottom: 20px;
+}
+.box_ri p{
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 18px;
+}
+.uerne{
+	width: 68px;
+	padding-left: 60px;
+}
+.uerne img{
+	width: 68px;
+	height: 68px;
+}
+.uerne p{
+	text-align: center;
+	font-family: "微软雅黑";
+}
+.ted {
+	padding-left: 30px;
+}
+.ted .ted_to{
+	height: 24px;
+	width: 450px;
+}
+.ted .ted_bo{
+	width: 426px;
+	background-color: #fff;
+	margin-left: 24px;
+	padding: 20px 40px 40px 40px;
+	box-sizing: border-box;
+	position: relative;
+}
+.ted .ted_bo .plubox{
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #E0E0E0;
+	/*position: absolute;*/
+}
+.ted .ted_bo .ttt{
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+.ted .ted_bo .plubox {
+	display: none;
+}
+.ted .ted_bo .plubox .plubox_top{
+	display: flex;
+	
+}
+.ted .ted_bo .plubox .plubox_top input{
+	border: 1px solid #cececf;
+	min-height: 40px;
+	line-height: 40px;
+	width: 260px;
+	
+}
+.ted .ted_bo .plubox .plubox_top button{
+	background-color: #7FA900;
+	width: 80px;
+	cursor: pointer;
+	font-family: "微软雅黑";
+	color: #fff;
+	font-size: 16px;
+}
+.ted .ted_bo .plubox .plubox_bo{
+	display: flex;
+	margin-top: 10px;
+	border-bottom: 1px solid #E0E0E0;
+	padding-bottom: 10px;
+}
+.ted .ted_bo .plubox .plubox_bo .plubox_bo_le{
+	margin-right: 20px;
+}
+.ted .ted_bo .plubox .plubox_bo .plubox_bo_le img{
+	width: 20px;
+	height: 20px;
+}
+.ted .ted_bo .plubox .plubox_bo .plubox_bo_cen{
+	font-family: "微软雅黑";
+}
+.ted .ted_bo .plubox .plubox_bo .plubox_bo_cen span{
+	color: #7594B3;
+	margin-right: 10px;
+}
+.box_ri li{
+	background: rgba(255,255,255,0.7);
+	height: 40px;
+	line-height: 40px;
+	font-size: 12px;
+	padding-left: 20px;
+	font-family: "微软雅黑";
+}
+.box_ri li:nth-of-type(1){
+	display: flex;
+	align-items: center;
+	/*justify-content: center;*/
+}
+.box_ri li:nth-of-type(1) img{
+	height: 30px;
+	width: 30px;
+	margin-right: 10px;
+}
+#ppl{
+	/*position: absolute;*/
+	display: block;
+	text-align: right;
+	right: 20px;
+	cursor: pointer;
+	bottom: 20px;
+}
+
+#offtui{
+	font-family: "微软雅黑";
+	cursor: pointer;
+	margin-top: 20px;
+}
+.shouqi{
+	position: absolute;
+	bottom: 10px;
+	cursor: pointer;	
+}

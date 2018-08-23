@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		 <link rel="stylesheet" href="/public/css/bc.css">
+		 <link rel="stylesheet" href="/public/css/register.css">
+    	<link rel="shortcut icon" href="/public/views/favicon.ico">
+	</head>
+	<body style="background: url({{urlimg}});background-size: 100% 100%;">
+			
+		<div class="box">
+			<form action="http://172.17.14.23:7777/api/registers" method="post" enctype="multipart/form-data" target="nm_iframe">
+				
+				<input type="text" name="username"  placeholder="用户名" id="username"/>
+				<input type="password" name="password"  placeholder="请输入密码" id="password"/>
+				<label for="pho" class="pho">
+					<span>上传头像</span>
+					<input type="file" name="pho" id="pho" value="头像" accept=".png,.jpg,.jpeg,.bmp,.gif,.svg"/>
+				</label>
+				<input type="submit" value="注册" class="sub" onclick="register()"/>
+			</form>
+			<iframe id="" name="nm_iframe" style="display:none;"></iframe>
+			<a href="/" id="ddlin">登陆</a>
+		</div>
+		<script src="/public/js/register.js"></script>
+	</body>
+	
+</html>
